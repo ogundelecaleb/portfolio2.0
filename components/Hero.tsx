@@ -8,14 +8,13 @@ const Spline = lazy(() => import("@splinetool/react-spline"));
 
 type Props = {};
 function Main() {
-  const{} = useTransition();
-  return(
+  const {} = useTransition();
+  return (
     <Spline scene="https://prod.spline.design/vVnyxRBOVoIn6-HS/scene.splinecode" />
-  )
+  );
 }
 
 function Hero({}: Props) {
-
   const [text, count] = useTypewriter({
     words: [
       "Hi, The Name is Ogundele Caleb",
@@ -35,11 +34,14 @@ function Hero({}: Props) {
         </div>
       </Suspense> */}
         <Suspense fallback={<h1>Still Loading…</h1>}>
-          <Main/>
-          </Suspense>
+          <Main />
+        </Suspense>
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+          Web Developer
+        </h2>
 
         <h1>
-          <span className="text-lg text-gray-400">{text}</span>
+          <span className="text-lg lg:text-xl text-gray-400 font-semibold">{text}</span>
           <Cursor cursorColor="#39ff14" />
         </h1>
       </div>

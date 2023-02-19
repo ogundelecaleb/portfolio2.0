@@ -9,7 +9,8 @@ type Props = {};
 
 export default function Navbar({}: Props) {
   return (
-    <div className="relative top-0 p-5  flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-start">
+    <div className="relative top-0 p-5  flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center md:px-28
+    ">
       <m.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{
@@ -20,21 +21,21 @@ export default function Navbar({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center gap-3 text-lg"
+        className="flex flex-row items-center gap-5 text-lg"
       >
-        <Link href="\">
+        <Link href="/">
         <BiHomeCircle color="grey" />
         </Link>
         
-        <Link href="\AboutMe">
+        <Link href="/AboutMe">
         <SiAboutdotme color="gray" />
         </Link>
         
         {/* <FcAbout color="white" /> */}
         {/* <BiUserCircle color="gray" /> */}
         
-        <Link href="\Portfolio"><RiBriefcaseLine color="gray" /></Link>
-         <Link href="\Contact"><RiContactsLine color="gray" /></Link>
+        <Link href="/Portfolio"><RiBriefcaseLine color="gray" /></Link>
+         <Link href="/Contact"><RiContactsLine color="gray" /></Link>
       </m.div>
 
       <m.div
