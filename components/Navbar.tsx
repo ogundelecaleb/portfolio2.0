@@ -1,6 +1,6 @@
 import React from "react";
 import { motion as m } from "framer-motion";
-import { BiUserCircle, BiHomeCircle } from "react-icons/Bi";
+// import { BiUserCircle, BiHomeCircle } from "react-icons/Bi";
 import { GrContact } from "react-icons/Gr";
 
 type Props = {};
@@ -20,8 +20,8 @@ export default function Navbar({}: Props) {
         }}
         className="flex flex-row items-center"
       >
-        <BiHomeCircle color="gray" />
-        <BiUserCircle color="gray" />
+        <GrContact color="gray" />
+        <GrContact color="gray" />
         <GrContact color="gray" />
         <GrContact color="gray" />
       </m.div>
