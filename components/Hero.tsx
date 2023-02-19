@@ -16,8 +16,11 @@ function Hero({}: Props) {
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen flex flex-col  justify-center items-center text-center overflow-hidden">
+    <div className="h-screen relative flex flex-col  justify-center items-center text-center overflow-hidden">
       {/* <BackgroundCircles /> */}
+      <div className="absolute top-6 left-2">
+      <Spline scene="https://prod.spline.design/FpOqd7Ta0oY6CevK/scene.splinecode" />
+      </div>
       <div>
        <Spline scene="https://prod.spline.design/vVnyxRBOVoIn6-HS/scene.splinecode" /> 
       </div>
