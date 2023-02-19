@@ -1,13 +1,15 @@
 import React from "react";
 import { motion as m } from "framer-motion";
 import { BiUserCircle, BiHomeCircle } from "react-icons/bi";
-import { GrContact } from "react-icons/gr";
+import { SiAboutdotme} from "react-icons/si";
+import { RiContactsLine,RiBriefcaseLine} from "react-icons/ri";
+import Link from "next/link";
 
 type Props = {};
 
 export default function Navbar({}: Props) {
   return (
-    <div className="sticky top-0 p-5  flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-start">
+    <div className="relative top-0 p-5  flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-start">
       <m.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{
@@ -18,12 +20,21 @@ export default function Navbar({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center"
+        className="flex flex-row items-center gap-3 text-lg"
       >
-        <BiHomeCircle color="gray" />
-        <BiUserCircle color="gray" />
-        <GrContact color="gray" />
-        <GrContact color="gray" />
+        <Link href="\">
+        <BiHomeCircle color="grey" />
+        </Link>
+        
+        <Link href="\AboutMe">
+        <SiAboutdotme color="gray" />
+        </Link>
+        
+        {/* <FcAbout color="white" /> */}
+        {/* <BiUserCircle color="gray" /> */}
+        
+        <Link href="\Portfolio"><RiBriefcaseLine color="gray" /></Link>
+         <Link href="\Contact"><RiContactsLine color="gray" /></Link>
       </m.div>
 
       <m.div

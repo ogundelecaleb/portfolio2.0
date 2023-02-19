@@ -39,7 +39,7 @@ function Hero({}: Props) {
           </Suspense>
 
         <h1>
-          <span>{text}</span>
+          <span className="text-lg text-gray-400">{text}</span>
           <Cursor cursorColor="#39ff14" />
         </h1>
       </div>
