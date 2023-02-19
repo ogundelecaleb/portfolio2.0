@@ -24,10 +24,11 @@ function Hero({}: Props) {
           <Spline scene="https://prod.spline.design/FpOqd7Ta0oY6CevK/scene.splinecode" />
         </div>
       </Suspense>
-
+      <Suspense fallback={<h1>Still Loading…</h1>}>
       <div>
         <Spline scene="https://prod.spline.design/vVnyxRBOVoIn6-HS/scene.splinecode" />
       </div>
+      </Suspense>
 
       <h1>
         <span>{text}</span>
