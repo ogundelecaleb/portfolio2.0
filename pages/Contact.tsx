@@ -27,6 +27,7 @@ function Contact({}: Props) {
       <h3 className="absolute -top-5 uppercase tracking-[20px] text-gray-500 text-1xl ">
           project
         </h3>
+        <div></div>
       </m.div>
       
       </m.div>
