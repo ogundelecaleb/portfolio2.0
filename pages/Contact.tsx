@@ -41,34 +41,34 @@ function Contact({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className=" relative mt-10 flex flex-col  justify-center items-center text-center md:text-left md:flex-row  px-7 mx-auto xl:px-10 h-full xl:space-y-0   "
+        className=" relative mt-20 flex flex-col py-[40px] justify-center items-center text-center md:text-left md:flex-row max-w-[2000px] px-5 mx-auto xl:px-10 min-h-screen xl:space-y-0    "
       >
-        <h3 className="absolute top-5 uppercase tracking-[20px] text-gray-500 text-1xl ">
+        <h3 className="absolute -top-5 uppercase tracking-[20px] text-gray-500 text-1xl  ">
           project
         </h3>
         <div className="flex flex-col space-y-10 ">
-          <h4 className="text-3xl font-semibold text-center">
+          <h4 className="text-2xl md:text-3xl font-semibold text-center">
             I have got just what you need.{" "}
             <span className="underline decoration-[#39ff14]/50">
               Lets Talk.
             </span>
           </h4>
 
-          <div className="space-y-8 w-[100px] mx-auto">
+          <div className="space-y-4 md:space-y-8 w-[100px] mx-auto">
             <div className="flex items-center space-x-5 justify-center">
               <BsTelephoneFill
                 color="#39ff14"
                 className="animate-pulse h-7 w-7"
               />
-              <p className="text-2xl">+2348113524450</p>
+              <p className="text-sm md:text-2xl">+2348113524450</p>
             </div>
             <div className="flex items-center space-x-5 justify-center">
               <HiEnvelope color="#39ff14" className="animate-pulse h-7 w-7" />
-              <p className="text-2xl">+2348113524450</p>
+              <p className="text-sm md:text-2xl">ogundelecaleb13@gmail.com</p>
             </div>
             <div className="flex items-center space-x-5 justify-center">
               <HiMapPin color="#39ff14" className="animate-pulse h-7 w-7" />
-              <p className="text-2xl">+2348113524450</p>
+              <p className="text-sm md:text-2xl">Lagos,Nigeria</p>
             </div>
           </div>
 

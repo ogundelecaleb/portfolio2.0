@@ -4,10 +4,12 @@ import { BiUserCircle, BiHomeCircle } from "react-icons/bi";
 import { SiAboutdotme, SiSkillshare} from "react-icons/si";
 import { RiContactsLine,RiBriefcaseLine} from "react-icons/ri";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 type Props = {};
 
 export default function Navbar({}: Props) {
+  const router = useRouter();
   return (
     <div className="relative top-0 p-5  flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center md:px-28
     ">
@@ -24,22 +26,32 @@ export default function Navbar({}: Props) {
         className="flex flex-row items-center gap-5 text-lg"
       >
         <Link href="/">
-        <BiHomeCircle color="grey" />
+        <BiHomeCircle   className={`cursor-pointer ${
+              router.pathname == "/" ? "text-[#39ff14]" : "text-gray-500"
+            }`} />
         </Link>
         
         <Link href="/AboutMe">
-        <SiAboutdotme color="gray" />
+        <SiAboutdotme className={`cursor-pointer ${
+              router.pathname == "/AboutMe" ? "text-[#39ff14]" : "text-gray-500"
+            }`} />
         </Link>
 
         <Link href="/Skills">
-        <SiSkillshare color="gray" />
+        <SiSkillshare className={`cursor-pointer ${
+              router.pathname == "/Skills" ? "text-[#39ff14]" : "text-gray-500"
+            }`} />
         </Link>
         
         {/* <FcAbout color="white" /> */}
         {/* <BiUserCircle color="gray" /> */}
         
-        <Link href="/Portfolio"><RiBriefcaseLine color="gray" /></Link>
-         <Link href="/Contact"><RiContactsLine color="gray" /></Link>
+        <Link href="/Portfolio"><RiBriefcaseLine className={`cursor-pointer ${
+              router.pathname == "/Portfolio" ? "text-[#39ff14]" : "text-gray-500"
+            }`} /></Link>
+         <Link href="/Contact"><RiContactsLine className={`cursor-pointer ${
+              router.pathname == "/Contact" ? "text-[#39ff14]" : "text-gray-500"
+            }`} /></Link>
       </m.div>
 
       <m.div
@@ -60,8 +72,8 @@ export default function Navbar({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         /> */}
-        <p className=" text-sm text-gray-400">
-          GET IN TOUCH
+        <p className=" text-sm text-[#39ff14]/80 tracking-[7px]">
+          KAILEB
         </p>
       </m.div>
     </div>

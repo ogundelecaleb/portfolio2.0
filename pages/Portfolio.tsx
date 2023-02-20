@@ -14,7 +14,7 @@ function Portfolio({}: Props) {
         duration: 0.75,
         ease: "easeOut",
       }}
-      className="absolute top-0 left-0 w-full  h-screen bg-[rgb(43,42,42)] text-white  overflow-auto "
+      className="absolute top-0 left-0 w-full  h-screen bg-[rgb(43,42,42)] text-white  overflow-hidden "
     >
       <m.div
         initial={{
@@ -31,9 +31,9 @@ function Portfolio({}: Props) {
         <h3 className="absolute -top-5 uppercase tracking-[20px] text-gray-500 text-1xl ">
           project
         </h3>
-        <div className=" relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory h-screen z-20">
+        <div className=" relative w-full flex overflow-x-scroll overflow-y-scroll snap-x snap-mandatory  z-20">
           {projects.map((project, i) => (
-            <m.div
+            <div
               key={i + 1}
               className="w-screen h-screen flex-shrink-0 snap-center items-center flex flex-col space-y-5 justify-center p-7 md:p-44"
             >
@@ -69,7 +69,7 @@ function Portfolio({}: Props) {
                   quasi exercitationem nihil.
                 </p>
               </div>
-            </m.div>
+            </div>
           ))}
         </div>
 
