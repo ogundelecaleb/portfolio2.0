@@ -1,7 +1,7 @@
 import React from "react";
 import { motion as m } from "framer-motion";
 import { BiUserCircle, BiHomeCircle } from "react-icons/bi";
-import { SiAboutdotme} from "react-icons/si";
+import { SiAboutdotme, SiSkillshare} from "react-icons/si";
 import { RiContactsLine,RiBriefcaseLine} from "react-icons/ri";
 import Link from "next/link";
 
@@ -29,6 +29,10 @@ export default function Navbar({}: Props) {
         
         <Link href="/AboutMe">
         <SiAboutdotme color="gray" />
+        </Link>
+
+        <Link href="/Skills">
+        <SiSkillshare color="gray" />
         </Link>
         
         {/* <FcAbout color="white" /> */}

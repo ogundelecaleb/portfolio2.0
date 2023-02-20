@@ -27,7 +27,7 @@ function AboutMe({}: Props) {
       }}
 
       className=" relative mt-20 flex flex-col  justify-center items-center text-center md:text-left md:flex-row max-w-7xl px-10 mx-auto   ">
-        <h3 className="absolute -top-5 uppercase tracking-[20px] text-grey-500 text-2xl ">
+        <h3 className="absolute -top-5 uppercase tracking-[20px] text-gray-500 text-1xl ">
           About
         </h3>
 
