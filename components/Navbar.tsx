@@ -11,7 +11,7 @@ type Props = {};
 export default function Navbar({}: Props) {
   const router = useRouter();
   return (
-    <div className="relative top-0 p-5  flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center md:px-28
+    <div className="relative top-0 p-5  flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center z-20 md:px-28
     ">
       <m.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
