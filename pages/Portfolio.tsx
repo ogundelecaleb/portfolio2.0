@@ -35,7 +35,7 @@ function Portfolio({}: Props) {
           {projects.map((project, i) => (
             <m.div
               key={i + 1}
-              className="w-screen h-screen flex-shrink-0 snap-center items-center flex flex-col space-y-5 justify-center p-20 md:p-44"
+              className="w-screen h-screen flex-shrink-0 snap-center items-center flex flex-col space-y-5 justify-center p-7 md:p-44"
             >
               <m.img
                 initial={{
