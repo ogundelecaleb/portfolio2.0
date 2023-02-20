@@ -44,7 +44,7 @@ function Contact({}: Props) {
         className=" relative mt-20 flex flex-col py-[40px] justify-center items-center text-center md:text-left md:flex-row max-w-[2000px] px-5 mx-auto xl:px-10 min-h-screen xl:space-y-0    "
       >
         <h3 className="absolute -top-5 uppercase tracking-[20px] text-gray-500 text-1xl  ">
-          project
+          Contact
         </h3>
         <div className="flex flex-col space-y-10 ">
           <h4 className="text-2xl md:text-3xl font-semibold text-center">
@@ -54,7 +54,7 @@ function Contact({}: Props) {
             </span>
           </h4>
 
-          <div className="space-y-4 md:space-y-8 w-[100px] mx-auto">
+          <div className="space-y-4 md:space-y-8 mx-auto">
             <div className="flex items-center space-x-5 justify-center">
               <BsTelephoneFill
                 color="#39ff14"

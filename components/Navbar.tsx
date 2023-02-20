@@ -11,7 +11,7 @@ type Props = {};
 export default function Navbar({}: Props) {
   const router = useRouter();
   return (
-    <div className="relative top-0 p-5  flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center z-20 md:px-28
+    <div className="relative top-0 p-5  flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center z-20 md:px-28 bg-
     ">
       <m.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
@@ -26,19 +26,19 @@ export default function Navbar({}: Props) {
         className="flex flex-row items-center gap-5 text-lg"
       >
         <Link href="/">
-        <BiHomeCircle   className={`cursor-pointer ${
+        <BiHomeCircle   className={`cursor-pointer text-xl ${
               router.pathname == "/" ? "text-[#39ff14]" : "text-gray-500"
             }`} />
         </Link>
         
         <Link href="/AboutMe">
-        <SiAboutdotme className={`cursor-pointer ${
+        <SiAboutdotme className={`cursor-pointer text-xl ${
               router.pathname == "/AboutMe" ? "text-[#39ff14]" : "text-gray-500"
             }`} />
         </Link>
 
         <Link href="/Skills">
-        <SiSkillshare className={`cursor-pointer ${
+        <SiSkillshare className={`cursor-pointer text-xl ${
               router.pathname == "/Skills" ? "text-[#39ff14]" : "text-gray-500"
             }`} />
         </Link>
@@ -46,10 +46,10 @@ export default function Navbar({}: Props) {
         {/* <FcAbout color="white" /> */}
         {/* <BiUserCircle color="gray" /> */}
         
-        <Link href="/Portfolio"><RiBriefcaseLine className={`cursor-pointer ${
+        <Link href="/Portfolio"><RiBriefcaseLine className={`cursor-pointer text-xl ${
               router.pathname == "/Portfolio" ? "text-[#39ff14]" : "text-gray-500"
             }`} /></Link>
-         <Link href="/Contact"><RiContactsLine className={`cursor-pointer ${
+         <Link href="/Contact"><RiContactsLine className={`cursor-pointer text-xl ${
               router.pathname == "/Contact" ? "text-[#39ff14]" : "text-gray-500"
             }`} /></Link>
       </m.div>

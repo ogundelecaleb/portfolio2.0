@@ -95,6 +95,8 @@ function Hero({}: Props) {
           GET IN TOUCH
         </p>
       </m.div> */}
+      <div className="w-full absolute top-[10%] bg-[#39ff14]/10 left-0 h-[400px] -skew-y-12"></div>
+
     </div>
   );
 }
