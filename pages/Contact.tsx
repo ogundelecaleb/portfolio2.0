@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion as m } from "framer-motion";
+import { BsTelephoneFill} from "react-icons/bs";
+import { HiEnvelope, HiMapPin} from "react-icons/hi2";
 
 type Props = {}
 
@@ -27,7 +29,27 @@ function Contact({}: Props) {
       <h3 className="absolute -top-5 uppercase tracking-[20px] text-gray-500 text-1xl ">
           project
         </h3>
-        <div></div>
+        <div className='flex flex-col space-y-10'>
+          <h4 className='text-3xl font-semibold text-center'>
+            I have got just what you need. <span className='underline decoration-[#39ff14]/50'>Lets Talk.</span>
+          </h4>
+
+          <div className='space-y-8'>
+            <div className='flex items-center space-x-5 justify-center'>
+              <BsTelephoneFill color='#39ff14' className='animate-pulse h-7 w-7'/>
+              <p className='text-2xl'>+2348113524450</p>
+            </div>
+            <div className='flex items-center space-x-5 justify-center'>
+              <HiEnvelope color='#39ff14' className='animate-pulse h-7 w-7'/>
+              <p className='text-2xl'>+2348113524450</p>
+            </div>
+            <div className='flex items-center space-x-5 justify-center'>
+              <HiMapPin color='#39ff14' className='animate-pulse h-7 w-7'/>
+              <p className='text-2xl'>+2348113524450</p>
+            </div>
+        
+          </div>
+        </div>
       </m.div>
       
       </m.div>

@@ -45,9 +45,12 @@ function Portfolio({}: Props) {
                 transition={{
                   duration: 1.2,
                 }}
-                animate={{
+                whileInView={{
                   opacity: 1,
                   y: 0,
+                }}
+                viewport={{
+                  once:true
                 }}
                 src="./apple_store.jpg"
                 alt=""
