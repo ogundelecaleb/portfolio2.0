@@ -44,7 +44,7 @@ function AboutMe({}: Props) {
             opacity: 1,
           }}
          
-          src="./caleb.jpg"
+          src="./assets/caleb.jpg"
           alt=""
           className="mt-10 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-65 md:h-95 xl:h-[600px]"
         />

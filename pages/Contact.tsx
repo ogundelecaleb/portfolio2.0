@@ -29,7 +29,7 @@ function Contact({}: Props) {
         duration: 0.75,
         ease: "easeOut",
       }}
-      className="absolute top-0 left-0 w-full  h-screen bg-[rgb(43,42,42)] text-white  overflow-auto  "
+      className="absolute top-0 left-0 w-full  h-screen bg-[rgb(43,42,42)] text-white  overflow-hidden  "
     >
       <m.div
         initial={{
@@ -46,7 +46,10 @@ function Contact({}: Props) {
         <h3 className="absolute -top-5 uppercase tracking-[20px] text-gray-500 text-1xl  ">
           Contact
         </h3>
-        <div className="flex flex-col space-y-10 ">
+        <div className="relative flex flex-col space-y-7 snap-x snap-mandatory  w-full  overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20  scrollbar-thumb-[#39ff14]  z-20">
+          <div>
+            
+          </div>
           <h4 className="text-2xl md:text-3xl font-semibold text-center">
             I have got just what you need.{" "}
             <span className="underline decoration-[#39ff14]/50">
@@ -54,20 +57,20 @@ function Contact({}: Props) {
             </span>
           </h4>
 
-          <div className="space-y-4 md:space-y-8 mx-auto">
-            <div className="flex items-center space-x-5 justify-center">
+          <div className="space-y-4 md:space-y-5 mx-auto">
+            <div className="flex items-center space-x-4 justify-center">
               <BsTelephoneFill
                 color="#39ff14"
-                className="animate-pulse h-7 w-7"
+                className="animate-pulse h-6 w-6"
               />
               <p className="text-sm md:text-2xl">+2348113524450</p>
             </div>
-            <div className="flex items-center space-x-5 justify-center">
-              <HiEnvelope color="#39ff14" className="animate-pulse h-7 w-7" />
+            <div className="flex items-center space-x-4 justify-center">
+              <HiEnvelope color="#39ff14" className="animate-pulse h-6 w-6" />
               <p className="text-sm md:text-2xl">ogundelecaleb13@gmail.com</p>
             </div>
-            <div className="flex items-center space-x-5 justify-center">
-              <HiMapPin color="#39ff14" className="animate-pulse h-7 w-7" />
+            <div className="flex items-center space-x-4 justify-center">
+              <HiMapPin color="#39ff14" className="animate-pulse h-6 w-6" />
               <p className="text-sm md:text-2xl">Lagos,Nigeria</p>
             </div>
           </div>

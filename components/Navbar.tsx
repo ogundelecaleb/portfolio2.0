@@ -43,9 +43,6 @@ export default function Navbar({}: Props) {
             }`} />
         </Link>
         
-        {/* <FcAbout color="white" /> */}
-        {/* <BiUserCircle color="gray" /> */}
-        
         <Link href="/Portfolio"><RiBriefcaseLine className={`cursor-pointer text-xl ${
               router.pathname == "/Portfolio" ? "text-[#39ff14]" : "text-gray-500"
             }`} /></Link>
