@@ -1,11 +1,16 @@
 import React from "react";
 import { motion as m } from "framer-motion";
+import { StaticImageData } from "next/image";
 
 type Props = {
   directionLeft?: boolean;
+  title: string;
+  percent: String;
+  
+  image: string
 };
 
-function Skill({ directionLeft }: Props) {
+function Skilly({ directionLeft, title, percent, image }: Props) {
   return (
     <div className="group relative flex cursor-pointer">
       <m.img
@@ -20,17 +25,17 @@ function Skill({ directionLeft }: Props) {
           opacity: 1,
           x: 0,
         }}
-        src="./react.png"
+        src={image}
         className="rounded-full border border-gray-500 object-cover w-20 h-20 md:h-24 md:w-24 xl:w-32 xl:h-32
          filter group-hover:grayscale transition duration-300 ease-in-out"
       />
       <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-20 h-20 md:h-24 md:w-24 xl:w-32 xl:h-32 rounded-full">
         <div className="flex items-center  justify-center h-full">
-            <p className="text-3xl font-bold text-black opacity-100">100%</p>
+            <p className="text-3xl font-bold text-black opacity-100">{percent}</p>
         </div>
       </div>
     </div>
   );
 }
 
-export default Skill;
+export default Skilly;
