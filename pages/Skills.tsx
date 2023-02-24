@@ -38,7 +38,7 @@ function Skills({}: Props) {
           Skills
         </h3>
         <h3 className="absolute top-2 uppercase tracking-[3px] text-gray-500 text-xs">
-          Hover over a screen for currency proficiency
+          Hover over a skill for current proficiency
         </h3>
 
         <div className="grid grid-cols-4 gap-5">
