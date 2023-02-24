@@ -30,7 +30,7 @@ function Hero({ }: Props) {
   });
   return (
     <div className="h-screen relative pt-[30px] flex flex-col  justify-center items-center text-center overflow-hidden ">
-      <div className="max-w-[300px] flex flex-col items-center text-center">
+      <div className=" flex flex-col items-center text-center">
         {/* <BackgroundCircles /> */}
         {/* <Suspense fallback={<h1>Still Loading…</h1>}>
         <div className="absolute top-6 left-2">
@@ -80,7 +80,7 @@ function Hero({ }: Props) {
         />
       </m.div>
 
-      <div className="w-full absolute top-[10%] bg-[#39ff14]/10 left-0 h-[400px] -skew-y-12 -z-20"></div>
+      
     </div>
   );
 }

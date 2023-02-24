@@ -39,11 +39,11 @@ function Portfolio({}: Props) {
         <h3 className="absolute -top-5 uppercase tracking-[20px] text-gray-500 text-1xl ">
          Portfolio
         </h3>
-        <div className=" relative w-full py-[70px] flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory  scrollbar-thin scrollbar-track-gray-400/20  scrollbar-thumb-[#39ff14]">
+        <div className=" relative w-full py-[70px] flex  overflow-y-hidden snap-x snap-mandatory  scrollbar-thin scrollbar-track-gray-400/20  scrollbar-thumb-[#39ff14]">
           {data.projects.map((project, i) => (
             <div
               key={project.title + 1}
-              className="w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-5 justify-center p-7 md:p-44"
+              className="w-screen flex-shrink-0 overflow-x-scroll snap-center items-center flex flex-col space-y-5 justify-center p-7 md:p-44"
             >
               <Link href={project.url}>
               <m.img
