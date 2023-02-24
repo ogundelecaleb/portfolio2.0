@@ -2,13 +2,13 @@ import React, { lazy, Suspense, useTransition } from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { SocialIcon } from "react-social-icons";
 import { motion as m } from "framer-motion";
-import { PageInfo} from "../typings";
+// import { PageInfo} from "../typings";
 import pageInfo from "@/caleb-portfolio-20/schemas/pageInfo";
 // import Spline from '@splinetool/react-spline';
 const Spline = lazy(() => import("@splinetool/react-spline"));
 
 type Props = {
-  pageInfo: PageInfo;
+  // pageInfo: PageInfo;
 };
 
 function Main() {
@@ -18,10 +18,10 @@ function Main() {
   );
 }
 
-function Hero({ pageInfo }: Props) {
+function Hero({ }: Props) {
   const [text, count] = useTypewriter({
     words: [
-      `Hi, The Name is ${pageInfo?.name}`,
+      "Hi, The Name is Ogundele Caleb",
       "i've got passion for web development",
       "<CodingIsMyHabit />",
     ],
@@ -41,7 +41,7 @@ function Hero({ pageInfo }: Props) {
           <Main />
         </Suspense>
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px] text-center">
-          {pageInfo?.role}
+          Web Developer
         </h2>
 
         <h1>

@@ -3,20 +3,20 @@ import { GetStaticProps } from "next";
 import Hero from "@/components/Hero";
 import Head from "next/head";
 import { motion as m } from "framer-motion";
-import { Social, Project, Skill, PageInfo } from "../typings";
-import { fetchPageInfo } from "../utils/fetchPageInfo";
+// import { Social, Project, Skill, PageInfo } from "../typings";
+// import { fetchPageInfo } from "../utils/fetchPageInfo";
 // import { fetchProjects } from "../utils/fetchProjects";
 // import { fetchSkills } from "../utils/fetchSkills";
 // import { fetchSocials } from "../utils/fetchSocials";
 
 type Props = {
-  pageInfo: PageInfo;
+  // pageInfo: PageInfo;
   // socials: Social[];
   // projects: Project[];
   // socials: Social[];
 };
 
-const Home = ({  pageInfo}: Props) => {
+const Home = ({  }: Props) => {
   return (
     <m.div
       animate={{ y: "0%" }}
@@ -31,7 +31,7 @@ const Home = ({  pageInfo}: Props) => {
 
       {/* <Navbar/> */}
       <section id="hero">
-        <Hero  pageInfo={pageInfo} />
+        <Hero />
       </section>
     </m.div>
   );
@@ -39,21 +39,21 @@ const Home = ({  pageInfo}: Props) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo();
-  // const socials: Social[] = await fetchSocials();
-  // const socials: Social[] = await fetchSocials();
-  // const projects: Project[] = await fetchProjects();
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//   const pageInfo: PageInfo = await fetchPageInfo();
+//   // const socials: Social[] = await fetchSocials();
+//   // const socials: Social[] = await fetchSocials();
+//   // const projects: Project[] = await fetchProjects();
 
-  return {
-    props: {
-      pageInfo,
-      // socials,
-      // projects,
-      // socials,
-    },
+//   return {
+//     props: {
+//       pageInfo,
+//       // socials,
+//       // projects,
+//       // socials,
+//     },
 
 
-    revalidate: 10,
-  };
-};
+//     revalidate: 10,
+//   };
+// };
