@@ -29,7 +29,7 @@ function Contact({}: Props) {
         duration: 0.75,
         ease: "easeOut",
       }}
-      className="absolute top-0 left-0 w-full  h-screen bg-[rgb(43,42,42)] text-white  overflow-hidden  "
+      className="absolute top-0 left-0 w-full  h-screen bg-[rgb(43,42,42)] text-white  overflow-hidden md:overflow-y-scroll  "
     >
       <m.div
         initial={{
@@ -41,7 +41,7 @@ function Contact({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className=" relative mt-20 flex flex-col py-[40px] justify-center items-center text-center md:text-left md:flex-row max-w-[2000px] px-5 mx-auto xl:px-10 min-h-screen xl:space-y-0    "
+        className=" relative mt-20 flex flex-col py-[40px] justify-center items-center text-center md:text-left md:flex-row max-w-[2000px] px-5 md:px-[100px] mx-auto xl:px-10 min-h-screen xl:space-y-0    "
       >
         <h3 className="absolute -top-5 uppercase tracking-[20px] text-gray-500 text-1xl  ">
           Contact

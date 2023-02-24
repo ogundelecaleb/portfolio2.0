@@ -22,7 +22,7 @@ function Portfolio({}: Props) {
         duration: 0.75,
         ease: "easeOut",
       }}
-      className="absolute top-0 left-0 w-full  h-screen bg-[rgb(43,42,42)] text-white overflow-hidden  "
+      className="absolute top-0 left-0 w-full  h-screen bg-[rgb(43,42,42)] text-white overflow-hidden md:overflow-y-scroll "
     >
       <m.div
         initial={{
