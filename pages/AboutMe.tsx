@@ -13,7 +13,7 @@ function AboutMe({}: Props) {
         duration: 0.75,
         ease: "easeOut",
       }}
-      className="absolute top-0 left-0 w-full  h-screen bg-[rgb(43,43,43)] text-white overflow-scroll  "
+      className="absolute top-0 left-0 w-full  h-screen bg-[rgb(43,43,43)] text-white overflow-hidden "
     >
       <m.div
         initial={{
@@ -25,7 +25,7 @@ function AboutMe({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="relative mt-20 flex flex-col  justify-center items-center text-center md:text-left md:flex-row max-w-[2000px] px-2 mx-auto xl:px-10 min-h-screen xl:space-y-0   "
+        className="relative mt-20 flex flex-col  justify-center items-center text-center md:text-left md:flex-row max-w-[2000px] px-2 mx-auto xl:px-10 min-h-screen xl:space-y-0  overflow-hidden  "
       >
         <h3 className="absolute -top-5 uppercase tracking-[20px] text-gray-500 text-1xl ">
           About
