@@ -104,12 +104,12 @@ const projects = [
     Image: "./assets/kailebfoodstore.jpg",
     description: "A mini food store",
   },
-  {
-    title: "Bezi Landing Page",
-    url: "https://bezi.netlify.app",
-    Image: "./assets/bezi.jpg",
-    description: "A landing page for a Tech startup in Lagos",
-  },
+  // {
+  //   title: "Bezi Landing Page",
+  //   url: "https://bezi.netlify.app",
+  //   Image: "./assets/bezi.jpg",
+  //   description: "A landing page for a Tech startup in Lagos",
+  // },
   {
     title: "X and O game",
     url: "http://127.0.0.1:5502/cover.html",
