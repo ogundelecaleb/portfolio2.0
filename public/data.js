@@ -78,6 +78,13 @@ const skills = [
 
 const projects = [
   {
+    title: "K-ride",
+    url: "https://k-ride.netlify.app/",
+    Image: "./assets/k-ride.jpg",
+    description:
+      "A mini uber clone, developed with MapBox, React and Firebase",
+  },
+  {
     title: "Apple Store",
     url: "https://ecommerce-with-sanity-copy-cmp9.vercel.app/",
     Image: "./assets/applestore.jpg",
