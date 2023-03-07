@@ -80,7 +80,7 @@ const projects = [
   {
     title: "K-ride",
     url: "https://k-ride.netlify.app/",
-    Image: "./assets/k-ride.jpg",
+    Image: "./assets/kride.jpg",
     description:
       "A mini uber clone, developed with MapBox, React and Firebase",
   },
