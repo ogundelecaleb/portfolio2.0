@@ -56,7 +56,7 @@ function Portfolio({}: Props) {
                    <Link href={project.url}>
                   <img
                     
-                    className="cursor-pointer object-cover rounded-[] h-[90px]"
+                    className="cursor-pointer object-cover rounded-[] h-[120px]"
                     src={project.Image}
                     alt="project image"
                   />
