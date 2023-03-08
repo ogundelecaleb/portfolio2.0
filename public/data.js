@@ -93,8 +93,8 @@ const projects = [
   },
 
   {
-    title: "Apple Store",
-    url: "https://ecommerce-with-sanity-copy-cmp9.vercel.app/",
+    title: "Kaileb Store",
+    url: "https://kaileb-store.netlify.app/",
     Image: "./assets/applestore.jpg",
     description:
       "Apple store is an e-commerce website where customer buy electronic gadget like headsets, earpiece, speakers and lot more. Apple store was built with react  and Sanity as backend",
