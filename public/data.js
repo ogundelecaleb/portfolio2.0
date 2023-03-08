@@ -91,6 +91,7 @@ const projects = [
     description:
       "A web app that shows list of movies, movie casts and a little background of actors, this project was created with ReactJS and Sanity.io as backend",
   },
+  
   {
     title: "Apple Store",
     url: "https://ecommerce-with-sanity-copy-cmp9.vercel.app/",
