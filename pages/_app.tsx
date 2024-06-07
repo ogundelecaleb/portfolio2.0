@@ -28,18 +28,27 @@ function Loading() {
       router.events.off("routeChangeError", handleComplete);
     };
   });
-  return <> {loading && (<div><Loader /></div>
+  return (
+    <>
+      {" "}
+      {loading && (
+        <div>
+          <Loader />
+        </div>
       )}
     </>
- 
+  );
 }
 
 export default function App({ Component, pageProps, router }: AppProps) {
   return (
-    <div className=" relative h-screen bg-[rgb(36,36,36)]  overflow-x-hidden ">
-      <Navbar />
-      <Loading />
-      <Component key={router.pathname} {...pageProps} />
-    </div>
+    <>
+    
+      <div className=" relative h-screen bg-[rgb(36,36,36)]  overflow-x-hidden ">
+        <Navbar />
+        <Loading />
+        <Component key={router.pathname} {...pageProps} />
+      </div>
+    </>
   );
 }
