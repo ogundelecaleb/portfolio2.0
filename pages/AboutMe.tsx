@@ -52,13 +52,13 @@ function AboutMe({}: Props) {
             Here is a little background
           </h4>
           <p className=" pb-20 text-sm">
-            Passionate and highly skilled Frontend Developer with 4 years of
+            Passionate and highly skilled Frontend Web and Mobile Developer with 4 years of
             experience in designing and developing user-friendly web interfaces
             and mobile applications. Specialized in building client and admin
             dashboards, integrating APIs, creating interactive chart systems,
             and developing embeddable payment gateways. Adept at collaborating
             with cross-functional teams and delivering high-quality, scalable
-            web solutions.
+            web and application solutions.
           </p>
         </div>
       </m.div>
