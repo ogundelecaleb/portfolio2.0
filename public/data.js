@@ -78,11 +78,129 @@ const skills = [
 
 const projects = [
   {
+    title: "Vantapp Mobile Application",
+    url: "https://play.google.com/store/apps/details?id=com.vant.app",
+    Image: "./assets/vantapp.png",
+    description:
+    "Vant is a complete personal financial manager and business control centre which encompasses Paying bills, Save & Invest Funds, Fast Transfer, Business Accounts, Pay debts. Vantapp mobile appication is available on both andriod and iOS. The application was built with React Native",
+  },
+  {
+    title: "Konix Mobile Application",
+    url: "https://play.google.com/store/apps/details?id=com.konix.app&pcampaignid=web_share&pli=1",
+    Image: "./assets/konixapp.png",
+    description:
+    "An ecommerce mobile application that provides users access to a wide range of renowned international luxury brands, ensuring you can shop for your favorite items hassle-free in the Konix mobile application, the konix mobile appication is available on both andriod and iOS. The application was built with React Native",
+  },
+  {
+    title: "LASUCOM Library Application",
+    url: "http://library.devapi.live/",
+    Image: "./assets/library.jpeg",
+    description:
+      "A web application that allow student to reserve book while they are away from the library so they can pick when on a stated date and time , the app also logs when a booked is picked from the library, the application provide users with list of available books in the library. The application was built with Nextjs and Tailwind CSS. ",
+  },
+  {
+    title: "Luchi Resturant Application",
+    url: "https://luchisrestaurants.com/menu",
+    Image: "./assets/luchi.jpeg",
+    description:
+      "A web application where customers can order for food from luchi resturant and also pay while on the app. The appliocation was built with Reactjs and Tailwind CSS.",
+  },
+  {
+    title: "Human Resources Management Application ",
+    url: "https://hrm.lasucom.edu.ng/",
+    Image: "./assets/hrm.jpeg",
+    description:
+      "A web application built to carry out Human Resouce Managent process and digitalize records of both teach and non teaching staffs in the University. The application was built with Reactjs and chakra Ui. ",
+  },
+  {
+    title: "Embedable Payment Gateway Widget ",
+    url: "https://paymentgateway.paylodeservices.com/",
+    Image: "./assets/paymentWidget.jpeg",
+    description:
+      "An Embedable secured payment gateway that can be used to collect both card and bank transfer transactions. The widget was built with React.js and Tailwind CSS ",
+  },
+  {
+    title: "Payment Gateway Admin Dashboard ",
+    url: "https://pgadmin.paylodeservices.com/dashboard",
+    Image: "./assets/gatewayAdmin.jpeg",
+    description:
+      "A real time dashboard built for administration of a payment gateway platform to over see payments collection flows and also other admin process. The dashboard also give user a pictorial visualization of data such as pie charts and histogram. The app was built with React.js and Tailwind CSS ",
+  },
+  {
+    title: "Payment Gateway Merchant Dashboard ",
+    url: "https://pgmerchants.paylodeservices.com/dashboard",
+    Image: "./assets/gatewaymerchant.jpeg",
+    description:
+      "A real time dashboard built for merchants to over see payments collection flows and also set up integration process. The dashboard also give user a pictorial visualization of data such as pie charts and histogram. The app was built with React.js and Tailwind CSS ",
+  },
+  {
+    title: "Eaglion Landing Website ",
+    url: "http://eaglion.co/",
+    Image: "./assets/eaglion.jpeg",
+    description:
+      "A well detailed website for technology service company, experts at website design, development, management, and IT consulting.",
+  },
+  {
+    title: "Vantapp Landing Website ",
+    url: "http://vantapp.com/",
+    Image: "./assets/vant.jpeg",
+    description:
+      "A well detailed website for a fintech solution, the appication is available for both andriod and iOS. ",
+  },
+  {
+    title: "Bill Vending Merchant Dashboard ",
+    url: "https://billvendingclient.paylodeservices.com/dashboard",
+    Image: "./assets/billMechant.jpeg",
+    description:
+      "A real time dashboard built for merchants to over see bill payments transaction flows. The dashboard also give user a pictorial visualization of data such as pie charts and histogram. The app was built with React.js and Tailwind CSS ",
+  },
+  {
+    title: "Bill Vendind Admin Dashboard ",
+    url: "https://billvendingadmin.paylodeservices.com/dashboard",
+    Image: "./assets/billvendingadmin.png",
+    description:
+      "A real time dashboard built for administration and control of a bill vending platform. The dashboard is responsible for setting up bill vendors to reagistered merchants, fund merchants wallets, set bill sell and buy rates, shows transaction history of every merchants registered to the platform. The app was built with React.js and Tailwind CSS ",
+  },
+  {
+    title: "Konixapp Landing Website ",
+    url: "http://konixapp.com/",
+    Image: "./assets/konix.jpeg",
+    description:
+      "A well detailed website for a ecommerce solution company that provides access to a wide range of renowned international luxury brands, ensuring you can shop for your favorite items hassle-free in the Konix mobile application, the konix mobile appication is available in both andriod and iOS. ",
+  },
+  {
+    title: "Crosswirex Landing Website ",
+    url: "http://crosswirex.com/",
+    Image: "./assets/crosswirex.jpeg",
+    description:
+      "A well detailed website for a software solution company that specialize in delivering comprehensive tech solutions and robust security services to propel its clients business forward. ",
+  },
+  {
+    title: "Paylode Landing Website ",
+    url: "http://paylodeservices.com/",
+    Image: "./assets/paylodeLanding.jpeg",
+    description:
+      "A well detailed website for a Fintech company that provides an integrated payment gateway services to its merchants. ",
+  },
+  {
+    title: "Oncology Medical Foundation Website ",
+    url: "http://oncologymedicalfoundation.org/",
+    Image: "./assets/oncology.jpeg",
+    description:
+      "A well detailed website for non-governmental organization that promote cancer awareness and also care cancer warriors in Nigeria. ",
+  },
+  {
+    title: "OA Initiative Website ",
+    url: "https://oainitiative.org",
+    Image: "./assets/oa.jpeg",
+    description:
+      "A well detailed website for non-governmental organization that promote sickle cell awareness and also care sickle cell warriors in Ekiti state Nigeria. ",
+  },
+  {
     title: "K-ride",
     url: "https://k-ride.netlify.app/",
     Image: "./assets/kride.jpg",
-    description:
-      "A mini uber clone, developed with MapBox, React and Firebase",
+    description: "A mini uber clone, developed with MapBox, React and Firebase",
   },
   {
     title: "Movies-actors-Library",
@@ -123,7 +241,8 @@ const projects = [
     title: "Weather Tracker",
     url: "https://weather-note.netlify.app/",
     Image: "./assets/weather.jpg",
-    description: "Web app that shows the weather condition in all cities across the globe",
+    description:
+      "Web app that shows the weather condition in all cities across the globe",
   },
   {
     title: "X and O game",

@@ -52,14 +52,13 @@ function AboutMe({}: Props) {
             Here is a little background
           </h4>
           <p className=" pb-20 text-sm">
-            I am a highly skilled and experienced web developer with over 3
-            years of experience in web development. I have a passion for building
-            state-of-art, easy to use, user-friendly websites and applications.
-            In addition to my knowledge base, i actively seek out new
-            technologies and stay up-to-date on industry trends and
-            advancements. This have allowed me to stay ahead of the curve and
-            deliver exceptional work to all of my employers, including those
-            i've worked for on a project basis.
+            Passionate and highly skilled Frontend Developer with 4 years of
+            experience in designing and developing user-friendly web interfaces
+            and mobile applications. Specialized in building client and admin
+            dashboards, integrating APIs, creating interactive chart systems,
+            and developing embeddable payment gateways. Adept at collaborating
+            with cross-functional teams and delivering high-quality, scalable
+            web solutions.
           </p>
         </div>
       </m.div>

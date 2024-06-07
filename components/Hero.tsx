@@ -40,8 +40,8 @@ function Hero({ }: Props) {
         <Suspense fallback={<h1>Still Loading…</h1>}>
           <Main />
         </Suspense>
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px] text-center">
-          Web Developer
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[8px] text-center">
+          Web and Mobile Developer
         </h2>
 
         <h1>
