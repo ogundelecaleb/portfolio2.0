@@ -31,7 +31,7 @@ const Home = ({  }: Props) => {
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="Official Portfolio for Samuel Otigba"
+          content="Official Portfolio for Ogundele Caleb"
         />
         <link
           rel="apple-touch-icon"
